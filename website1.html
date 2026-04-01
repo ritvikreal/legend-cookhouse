@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .video-section {
+            height: 100vh;
+            position: relative;
+        }
+
+        .video-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        .hero-title {
+            font-size: clamp(32px, 8vw, 70px);
+            font-weight: 900;
+        }
+
+        .legend {
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        .cookhouse {
+            color: transparent;
+            -webkit-text-stroke: 2px yellow;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            bottom: 50px;
+            left: 50%;
+            width: 2px;
+            background: gray;
+            transform: translateX(-50%);
+        }
+
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: clamp(32px, 8vw, 70px);
+        }
+
+        .container-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        .vid-hover {
+            opacity: 0.5;
+        }
+
+        .vid-hover:hover {
+            opacity: 1.1;
+        }
+
+        .border-hover p:hover {
+            border-bottom: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="./website1.html">
+                <img src="./images/legentCookLogo.png" class="img-fluid" width="90">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./website1.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu/menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sauces/sauces.html">
+                            Sauces
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reservation/reservation.html">
+                            Reservation
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bookevent/bookevent.html">
+                            Book Event
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./legendfamily/legendfamily.html">
+                            Legend Family
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./account/account.html">
+                            Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ................... -->
+
+    
+    <div class="container-fluid p-0 video-section">
+        <video autoplay muted loop playsinline>
+            <source src="./videos/2339-157269920_medium.mp4" type="video/mp4">
+        </video>
+        <div class="container-title text-center">
+            <h1 class="hero-title">
+                <span class="legend">
+                    LEGEND
+                </span>
+                <span class="cookhouse">
+                    COOKHOUSE
+                </span>
+            </h1>
+            <p class="text-white">
+                The best Guyanese, Caribbean & American fusion cuisine
+                restaurant and bar located in South Ozone Park /
+                Richmond Hill, NYC.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="./menu/menu.html">
+                    <button class="btn btn-warning">
+                        PLACE YOUR ORDER
+                    </button>
+                </a>
+                <button class="btn btn-outline-warning">
+                    VISIT US
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- .............. -->
+
+    <div class="container-fluid py-5">
+        <div class="row align-items-center justify-content-center g-4">
+            <div class="col-12 col-md-6 text-center">
+                <img src="./images/legend_cookhouse_outside..jpg" class="img-fluid rounded w-50 w-md-40 w-lg-25"
+                    alt="Legend Cookhouse Restaurant">
+            </div>
+
+            <div class="col-12 col-md-6 text-center text-md-start px-3 px-md-4">
+                <h2 class="mb-3" style="color:rgb(255, 94, 0);">
+                    Welcome To The Legend
+                    <br>
+                    Cookhouse Restaurant
+                </h2>
+
+                <p>
+                    <b>LEGEND COOKHOUSE</b>
+                    is the best
+                    <b>Guyanese-American fusion</b>
+                    cuisine restaurant and bar
+                    located in
+                    <b>South Ozone Park/Richmond Hill, NYC.</b>
+                    We provide a
+                    <b>satisfying fine dining experience,</b>
+                    offering the best and most
+                    popular
+                    <b>Guyanese food dishes</b>.
+                </p>
+
+                <p>
+                    Our menu is inspired by the flavors of the
+                    <b>Caribbean, South America, and the United States,</b>
+                    carefully crafted to bring
+                    <b>bold, authentic flavors</b>
+                    to every dish.
+                    Whether you're looking for a
+                    <b>quick bite, a family meal, or a night out,</b>
+                    we’ve got you covered!
+                </p>
+
+                <p>
+                    At
+                    <b>Legend Cookhouse,</b>
+                    we take pride in creating a
+                    <b>warm, family-friendly atmosphere.</b>
+                    Our goal is to keep
+                    <b>Guyanese culinary traditions alive</b>
+                    while also introducing new generations to our
+                    <b>rich food culture.</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- .............................. -->
+
+
+    <div class="container-fluid menu-options text-center ">
+        <h2>Our Menu Options</h2>
+
+        <div class="row justify-content-center flex-column text-center mt-5 timeline ">
+            <div class="col-12 mb-5  mx-auto" style="width: 18rem;">
+                <div class="card shadow p-3">
+                    <img src="./images/caribbean.png" class="card-img-top mx-auto w-25" alt="caribbeanimg">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Caribbean Delights</h5>
+
+                        <p class="card-text">
+                            Experience the bold, vibrant flavors of the Caribbean! From jerk-seasoned meats
+                            to slow-cooked curries, every bite takes you on a journey through the islands.
+                            Our dishes are crafted using authentic spices and time-honored techniques,
+                            ensuring a taste that feels like home. 🇬🇾
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-5  mx-auto" style="width: 18rem;"">
+                <div class=" card shadow p-3">
+                <img src="./images/chinese.png" class="card-img-top mx-auto w-25" alt="caribbeanimg">
+
+                <div class="card-body">
+                    <h5 class="card-title"> Guyanese Chinese
+                    </h5>
+                    <p class="card-text">
+                        A true fusion of East and West, our Guyanese Chinese cuisine brings together traditional
+                        Chinese flavors with rich Caribbean influences. Stir-fried noodles, fried rice, and aromatic
+                        seasonings create a one-of-a-kind dining experience you won’t find anywhere else!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mb-5  mx-auto" style="width: 18rem;">
+            <div class="card shadow p-3">
+                <img src="./images/carte.png" class="card-img-top mx-auto w-25" alt="caribbeanimg">
+                <div class="card-body">
+                    <h5 class="card-title"> A La Carte
+                    </h5>
+                    <p class="card-text">
+                        Customize your meal with our **signature dishes**. Whether you're craving perfectly grilled
+                        meats, sizzling seafood, or vegetarian delights, our à la carte menu lets you mix and match
+                        your favorites to craft your perfect meal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mb-5  mx-auto" style="width: 18rem;">
+            <div class="card shadow p-3">
+                <img src="./images/salads.png" class="card-img-top mx-auto w-25" alt="caribbeanimg">
+                <div class="card-body">
+                    <h5 class="card-title"> Salads & Veggies
+                    </h5>
+                    <p class="card-text">
+                        Fresh, crisp, and packed with flavor, our salads and vegetable-based dishes offer a light
+                        yet satisfying way to enjoy the **rich produce of the Caribbean**. We use farm-fresh
+                        ingredients, tangy dressings, and bold seasonings to make healthy eating taste incredible.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-5  mx-auto" style="width: 18rem;">
+            <div class="card shadow p-3">
+                <img src="./images/soup.png" class="card-img-top mx-auto w-25" alt="caribbeanimg">
+                <div class="card-body">
+                    <h5 class="card-title"> Soup
+                    </h5>
+                    <p class="card-text">
+                        Comfort in a bowl. Our soups are slow-simmered to perfection, blending rich broths, hearty
+                        meats, and fresh vegetables for a warm and flavorful experience. Try our legendary seafood
+                        soup or classic chicken noodle for a taste of home.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-5  mx-auto" style="width: 18rem;">
+            <div class="card shadow p-3">
+                <img src="./images/dessert.png" class="card-img-top mx-auto w-25" alt="caribbeanimg">
+
+                <div class="card-body">
+                    <h5 class="card-title"> Dessert
+                    </h5>
+                    <p class="card-text">
+                        End your meal on a sweet note with **Guyanese-inspired desserts**. From fluffy sponge cakes
+                        to rich, creamy pastries, our desserts bring a taste of tradition with every bite. A true
+                        indulgence for those who love tropical flavors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- .................. -->
+
+    <h2 class="text-center mb-3">Menu Highlights</h2>
+    <div class="container container-fluid d-flex gap-5 justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Chicken.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chicken Lo Mein</h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./images/ShrimpChowMein.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Shrimp ChowMein Noodle</h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./images/ChickenFriedRice.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chicken Fried Ricee</h5>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <a href="#">
+            <button class="btn btn-warning ">VIEW FULL MENU</button>
+        </a>
+    </div>
+
+    <!-- ................. -->
+
+    <div class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-6 text-center">
+                <img src="./images/rupe-standingowner.jpeg" class="img-fluid rounded shadow w-50 w-md-40 w-lg-25"
+                    alt="Rupe Harricharan">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start">
+                <h6 class="text-warning">
+                    ABOUT THE FOUNDER
+                </h6>
+                <h2 class="mb-3">
+                    Meet Rupe Harricharan
+                </h2>
+                <p>
+                    Over two decades of dedication creating and designing services ensuring elevated experiences in the
+                    food and beverage industry.
+                </p>
+                <p>
+                    Our variety of sauces brings joy and happiness to the community and helps families cook better at
+                    home.
+                </p>
+                <p>
+                    Rupe holds a Bachelor of Arts in accounting and economics from Queens College, City University of
+                    New York.
+                </p>
+                <p>
+                    When he is not working, he enjoys exploring new restaurants and bars and participating in cricket
+                    matches.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .................... -->
+
+    <div class="container container-fluid text-center">
+        <h2>Visit Us</h2>
+        <p>Come and experience our flavors in person! Find us at:</p>
+        <strong>Legend Cookhouse, 13511 Rockaway Blvd, Queens, NY</strong>
+    </div>
+    <div class="container-fluid text-center my-5 p-0">
+        <iframe src="https://maps.google.com/maps?q=40.674728,-73.802841&z=17&output=embed" width="100%" height="450"
+            style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- ....................... -->
+
+    <div class="container py-5">
+        <h3 class="text-center">
+            What our customers say
+        </h3>
+        <div class="d-flex justify-content-center gap-4 flex-wrap mt-4 border-hover">
+            <p class="mb-0">All Reviews</p>
+            <p class="mb-0">
+                <i class="bi bi-google text-success"></i>
+                Google
+            </p>
+            <p class="mb-0">
+                <i class="bi bi-yelp text-danger"></i>
+                Yelp
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light py-5">
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row g-4 text-center text-md-start">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Sudeep A.
+                                        <i class="bi bi-patch-check-fill text-primary"></i>
+                                    </h6>
+                                    <small class="text-muted">
+                                        2 days ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <p>
+                                        Good food great people fun atmosphere.
+                                    </p>
+                                    <b>
+                                        Yelp
+                                        <i class="bi bi-yelp text-danger"></i>
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Jenny
+                                        <i class="bi bi-patch-check-fill text-primary"></i>
+                                    </h6>
+                                    <small class="text-muted">
+                                        10 days ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <p>
+                                        Highly recommended, food is delicious
+                                    </p>
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Sandy Boodram
+                                        <i class="bi bi-patch-check-fill text-primary"></i>
+                                    </h6>
+                                    <small class="text-muted">
+                                        26 days ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★☆
+                                    </div>
+                                    <p>
+                                        This food was delicious.
+                                    </p>
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Raymond bachu
+                                        <i class="bi bi-patch-check-fill text-primary"></i>
+                                    </h6>
+                                    <small class="text-muted">
+                                        1 month ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <p>
+                                        Great place. Great customer service
+                                    </p>
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row g-4 text-center text-md-start">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Brian Armogan
+                                    </h6>
+                                    <small class="text-muted">
+                                        1 month ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <p>
+                                        Legend Cookhouse is a great place to hangout
+                                    </p>
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Sumit
+                                    </h6>
+                                    <small class="text-muted">
+                                        1 month ago
+                                    </small>
+                                    <div class="text-warning"> ★★★★★
+                                    </div>
+                                    <p>
+                                        Loved shrimp fried rice
+                                    </p>
+
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Ritvik
+                                    </h6>
+                                    <small class="text-muted">
+                                        1 month ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <p>
+                                        Chicken fried rice was delicious
+                                    </p>
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="shadow-sm bg-white rounded p-3 h-100">
+                                    <h6>
+                                        <i class="bi bi-person-circle"></i>
+                                        Christiana
+                                    </h6>
+                                    <small class="text-muted">
+                                        1 month ago
+                                    </small>
+                                    <div class="text-warning">
+                                        ★★★★★
+                                    </div>
+                                    <p>
+                                        Very good food and service
+                                    </p>
+                                    <b>
+                                        Google
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle">
+                </span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle">
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- .............. -->
+
+
+    <div class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-2 text-center text-md-start">
+                <img src="./images/legentCookLogo.png" class="img-fluid rounded" style="max-height:70px;">
+            </div>
+
+            <div class="col-12 col-md-6 text-center text-md-start">
+                <h4 class="text-primary mb-1">
+                    Legend Chefs Gourmet
+                </h4>
+
+                <div class="text-primary mb-1">
+                    @legendchefsgourmet
+                </div>
+                <p class="mb-2">
+                    LEGEND COOKHOUSE is a Guyanese American fusion cuisine
+                    Restaurant and Bar located in South Ozone Park/Richmond Hill,
+                    New York City. We provide fine dining, a full bar, take out,
+                    delivery and catering services.
+                </p>
+                <a href="https://legendchefsgourmet.com/">
+                    https://legendchefsgourmet.com/
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="row g-2 justify-content-center justify-content-md-start">
+                    <div class="col-12 col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-facebook"></i>
+                            Like On Facebook
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ................ -->
+
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <a href="https://www.facebook.com/watch/legendchefsgourmet/?ref=embed_video"
+                    class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row align-items-center text-center text-md-start p-3">
+                            <div class="col-3">
+                                <img src="./images/legentCookLogo.png" class="img-fluid rounded"
+                                    style="max-height:50px;">
+                            </div>
+                            <div class="col-6">
+                                <h6 class="mb-0 text-primary">
+                                    Legend Chefs Gourmet
+                                </h6>
+                                <small>
+                                    September 19, 2024
+                                </small>
+                            </div>
+                            <div class="col-3 text-end">
+                                <i class="bi bi-facebook text-primary fs-4">
+                                </i>
+                            </div>
+                        </div>
+                        <img src="./images/playimg.png" class="card-img-top vid-hover" alt="video">
+                        <div class="row text-center p-3">
+                            <div class="col">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="https://www.facebook.com/watch/legendchefsgourmet/?ref=embed_video"
+                    class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row align-items-center text-center text-md-start p-3">
+                            <div class="col-3">
+                                <img src="./images/legentCookLogo.png" class="img-fluid rounded"
+                                    style="max-height:50px;">
+                            </div>
+                            <div class="col-6">
+                                <h6 class="mb-0 text-primary">
+                                    Legend Chefs Gourmet
+                                </h6>
+                                <small>
+                                    September 19, 2024
+                                </small>
+                            </div>
+                            <div class="col-3 text-end">
+                                <i class="bi bi-facebook text-primary fs-4">
+                                </i>
+                            </div>
+                        </div>
+                        <img src="./images/playimg.png" class="card-img-top vid-hover" alt="video">
+                        <div class="row text-center p-3">
+                            <div class="col">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.facebook.com/watch/legendchefsgourmet/?ref=embed_video"
+                    class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row align-items-center text-center text-md-start p-3">
+                            <div class="col-3">
+                                <img src="./images/legentCookLogo.png" class="img-fluid rounded"
+                                    style="max-height:50px;">
+                            </div>
+
+                            <div class="col-6">
+                                <h6 class="mb-0 text-primary">
+                                    Legend Chefs Gourmet
+                                </h6>
+                                <small>
+                                    September 19, 2024
+                                </small>
+                            </div>
+                            <div class="col-3 text-end">
+                                <i class="bi bi-facebook text-primary fs-4">
+                                </i>
+                            </div>
+                        </div>
+                        <img src="./images/playimg.png" class="card-img-top vid-hover" alt="video">
+                        <div class="row text-center p-3">
+                            <div class="col">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.facebook.com/watch/legendchefsgourmet/?ref=embed_video"
+                    class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row align-items-center text-center text-md-start p-3">
+                            <div class="col-3">
+                                <img src="./images/legentCookLogo.png" class="img-fluid rounded"
+                                    style="max-height:50px;">
+                            </div>
+                            <div class="col-6">
+                                <h6 class="mb-0 text-primary">
+                                    Legend Chefs Gourmet
+                                </h6>
+                                <small>
+                                    September 19, 2024
+                                </small>
+                            </div>
+
+                            <div class="col-3 text-end">
+                                <i class="bi bi-facebook text-primary fs-4">
+                                </i>
+                            </div>
+                        </div>
+                        <img src="./images/playimg.png" class="card-img-top vid-hover" alt="video">
+
+                        <div class="row text-center p-3">
+                            <div class="col">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.facebook.com/watch/legendchefsgourmet/?ref=embed_video"
+                    class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row align-items-center text-center text-md-start p-3">
+                            <div class="col-3">
+                                <img src="./images/legentCookLogo.png" class="img-fluid rounded"
+                                    style="max-height:50px;">
+                            </div>
+
+                            <div class="col-6">
+                                <h6 class="mb-0 text-primary">
+                                    Legend Chefs Gourmet
+                                </h6>
+                                <small>
+                                    September 19, 2024
+                                </small>
+                            </div>
+
+                            <div class="col-3 text-end">
+                                <i class="bi bi-facebook text-primary fs-4">
+                                </i>
+                            </div>
+                        </div>
+                        <img src="./images/playimg.png" class="card-img-top vid-hover" alt="video">
+                        <div class="row text-center p-3">
+                            <div class="col">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.facebook.com/watch/legendchefsgourmet/?ref=embed_video"
+                    class="text-decoration-none text-dark">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row align-items-center text-center text-md-start p-3">
+                            <div class="col-3">
+                                <img src="./images/legentCookLogo.png" class="img-fluid rounded"
+                                    style="max-height:50px;">
+                            </div>
+
+                            <div class="col-6">
+                                <h6 class="mb-0 text-primary">
+                                    Legend Chefs Gourmet
+                                </h6>
+                                <small>
+                                    September 19, 2024
+                                </small>
+                            </div>
+
+                            <div class="col-3 text-end">
+                                <i class="bi bi-facebook text-primary fs-4">
+                                </i>
+                            </div>
+                        </div>
+
+                        <img src="./images/playimg.png" class="card-img-top vid-hover" alt="video">
+
+                        <!-- ............... -->
+
+                        <div class="row text-center p-3">
+                            <div class="col">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-chat"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--........... -->
+
+    <div class="container text-center py-4">
+        <h2>
+            Follow Us
+        </h2>
+        <p>
+            Stay updated with our latest offers and events!
+        </p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            <a href="#" class="text-warning text-decoration-none">
+                Facebook
+            </a>
+            <a href="#" class="text-warning text-decoration-none">
+                Instagram
+            </a>
+            <a href="#" class="text-warning text-decoration-none">
+                TikTok
+            </a>
+        </div>
+    </div>
+
+    <!-- .......................... -->
+    <div class="container-fluid bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            © 2025 Legend Cookhouse. All rights reserved.
+        </p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

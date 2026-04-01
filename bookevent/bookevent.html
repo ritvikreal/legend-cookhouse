@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Family</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-image: url('../images/bookeventbg.jpg');
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="../website1.html">
+                <img src="../images/legentCookLogo.png" class="img-fluid" width="90">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../website1.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu/menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sauces/sauces.html">Sauces</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../reservation/reservation.html">Reservation</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bookevent.html">Book Event</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../legendfamily/legendfamily.html">Legend Family</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../account/account.html">Account</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container text-center mt-2 text-white">
+
+        <h3>Book an Event</h3>
+
+        <p class="mt-2">
+            Host your special event at Legend Cookhouse. Let us create a memorable experience for you.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <form class="col-lg-6 col-md-8 col-12 bg-light shadow rounded p-4">
+
+                <div class="mb-2">
+                    <input type="text" class="form-control" placeholder="Full Name" required>
+                </div>
+
+
+                <div class="mb-2">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+
+
+                <div class="mb-2">
+                    <input type="number" class="form-control" placeholder="Phone Number" required>
+                </div>
+
+
+                <div class="dropdown mb-2">
+
+                    <button
+                        class="btn bg-white border w-100 text-start d-flex justify-content-between align-items-center dropdown-toggle"
+                        data-bs-toggle="dropdown">
+
+                        Private Dining
+
+                    </button>
+
+                    <ul class="dropdown-menu w-100">
+
+                        <li><a class="dropdown-item">Birthday Party</a></li>
+                        <li><a class="dropdown-item">Corporate Event</a></li>
+                        <li><a class="dropdown-item">Wedding Reception</a></li>
+                        <li><a class="dropdown-item">Other</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="mb-2">
+                    <input type="date" class="form-control">
+                </div>
+
+
+                <div class="mb-2">
+                    <input type="time" class="form-control">
+                </div>
+
+
+                <div class="dropdown mb-2">
+
+                    <button
+                        class="btn bg-white border w-100 text-start d-flex justify-content-between align-items-center dropdown-toggle"
+                        data-bs-toggle="dropdown">
+
+                        1 Guest
+
+                    </button>
+
+                    <ul class="dropdown-menu w-100">
+
+                        <li><a class="dropdown-item">1 Guest</a></li>
+                        <li><a class="dropdown-item">2 Guest</a></li>
+                        <li><a class="dropdown-item">3 Guest</a></li>
+                        <li><a class="dropdown-item">4 Guest</a></li>
+                        <li><a class="dropdown-item">5 Guest</a></li>
+                        <li><a class="dropdown-item">6 Guest</a></li>
+                        <li><a class="dropdown-item">7 Guest</a></li>
+                        <li><a class="dropdown-item">8 Guest</a></li>
+                        <li><a class="dropdown-item">9 Guest</a></li>
+                        <li><a class="dropdown-item">10 Guest</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <textarea class="form-control mb-2" placeholder="Special request (optional)" rows="3"></textarea>
+
+
+                <button class="btn btn-danger w-100">
+
+                    Submit Request
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
